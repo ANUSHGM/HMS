@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+ background-repeat:no-repeat;
+  background-color: #5fb7df;
+  text-align:center;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAA7VBMVEVpuuf///86UGUAAAD+22dqves3S15Vi67cn0IrRVy3vsSyub9NiapWmL08VGrGy9Lm5uaTk5MuLi6JiYnfpUTdo0j8+fK2trYmJib/3GPNzc1guOzS0ZCkpKTz8/P5+fljq9Zra2tRUVFjY2P/3F+GhGV6fGYxS2XT09Pi4uKXw8Sgxb3iokBZWVl1dXU3NzewsLBHdZJ3vduIwNTj1IPZ04uyyLLn1X372myMws7w13T32mqrx7lZt/G6zKjg04hxvODJz5pDY35wbmB+dF4fP1rPwq9zgY766tDamC+SnKYSEhKOjo5LX3JdpMwipY9DAAAEG0lEQVR4nO3d7VeaUADHcUHAudRZblMkQetuWflsPtVWza3n8v//c8a1bDpAEfHccy+/74veWBzuJ0C56rmxGEIIIYQQQgghhBBCCCGEEEIIIYQQzxmdbrdjGKx3g2HGydkFIcrZaXQRjB7RFRrpsd4VZl2RqYCuK+SM9b6wyegTfYqwPyBD0o/m6TDUz08JISMj1j3XL1jvDYuMkX0QXHf2r+ilkSjkhPUObT/D0Q+iDLvTp0Xj0jbo/3T8But9DrlRb///BvbzweX0QeNKV/SB4xd6I8Y7HW720a47si+Hg+vY21mhOB8nYr1soGe8W+QXfal44fqYEg2DYb8T614qepQNFPupkXgI8G+gquWFPAyWRk4XtxFTWY9qndRyOyPPd/Td87/tnf7taGEjmXaZHwU1oWly+AaypiV4QbAJZHkbBrZCig8EdeIgCM1A1iZcIKjjLRrIYy4Myk6CEA00Hq6LatrFQP5d+7x+f9wM0jwYOK+IU4MPa1dzNeDhqWHeIDnrJpjBzfsGeDVIvux8mnX7sL7Bw+37n++8JLk0SN5J/7oPYnA/t4G7JI8GGWveoPZl7WrzBlKGQ4Pk4/wIpK8BWtjAY5JDgx0p1D7CAAYwgAEMYAADGMAABjAQ1sD0KBIG2VKe/ox7VI2AwbE9znrEDXJ0oMeSlffIWj50oQxaHpVWlBfAgJ4LlSXnwqoOBTCQzFZR2sCgLoJBSMEABjCAAQxgAAMYwEA0gyydJzErh67VjyNgYB3G462Izx/s0oGaklk/cC8Kx0Hj7Z9teeR3hpFng7xN8GRJpv+7ZXcEng2kVpNe99aYPxDQ4DXP+URHLfcZRgEMNg4GMIABDGAAAxjAQEADz9eJfj+EwbVBvt7IRnz+gN43FqxoG8zmD7Ie+STg2uCZGmQls1HxqO7vkyg8G1jNeLy0dP5AfANJqtLj3XM+8aAZBYNwggEMYAADGMAABjAQ0cDrPdf5xDXI09tjc6+wMo93Gvk3oDdLDZ/vuYpqMPv+wu7qnkU9F97mUKxiwKoCGFRtgoOof4ejmitZ+A7H67UxaAIZbBoMYAADGMAABjCAgYAG5nMuSEUxDHLxQjHw/cKuEAYlOhRTMpt7ASqUhDCYfQYjyteD2XHwFPDeuSKAgZR7aga/HggyhyJNp8xNH/OJrnOMLSEMwgkGMIABDGAAAxjAAAaCGDyuHtc68bj+wuI6HJvH4zocsnYXJgKf67EsrMuzYbytyzO3TlcytN43yYeBy7J9IcbFWmWx8nibBpky6/H5KrXFA0FLsR6dr9RJe2sIWpuLU8Eu1c5sRUHLtBOsx+a7RKo9zoTeuJ3i40x4LZ3aSmnW41onNTZJh96Er0Wu6ULf4cd6TAghhBBCCCGEEEIIIYQQQggt9BfU5xEgf6fWWwAAAABJRU5ErkJggg==" alt="image">
+ <form  action="listservlet" method="post">
+ <table width="20%" align="center">
+<div>
+<tr>
+<td><label for="choose your option"><b>CHOOSE YOUR OPTION</b></label></td><br>
+</tr>
+<tr>
+<td><input type="radio" name="option" value="checkin" />
+<label for="check in"><b>Check In</b></label></td><br>
+</tr>
+<tr>
+<td><input type="radio" name="option"  value="roomavailability"/>
+<label for="roomavailability"><b>Room Availability</b></label></td><br>
+</tr>
+<tr>
+<td><input type="radio" name="option" value="food" />
+<label for="food"><b>Food</b></label></td><br>
+</tr>
+<tr>
+<td><input type="radio" name="option" value="checkout" />
+<label for="checkout"><b>Check Out</b></label></td><br>
+</tr>
+<tr>
+<td><input type="radio" name="option" value="logout" />
+<label for="logout"><b>Log Out</b></label></td><br>
+</tr>
+<tr>
+<td><input type="submit" value="submit" /></td>
+</tr>
+</div>
+</div>
+</table>
+</form>
+</body>
+</html>

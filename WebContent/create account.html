@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="design1.css" media="screen"/>
+<style>
+body{
+background-image: url('create acc.png');
+background-repeat:no-repeat;
+text-align: center;
+font-family: Arial;
+position:absolute;
+top:20%;
+right:37%;
+font-size:130%;
+}
+input[type=text], input[type=password],input[type=email],input[type=radio],input[type=number]{
+border-radius: 12px;
+   background-color: #e6dbc9;
+   color:black;
+}
+input[type=submit]{
+background-color:  #254e58;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: white; 
+  border: 1px solid  #254e58;
+  border-radius: 12px;
+ width: 70;
+}
+input[type=submit]:hover {
+  background-color:  #254e58;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+</style>
+<title>Account Creation</title>
+</head>
+<body>
+
+<h2> Create Your Account</h2>
+<form action="createaccountservlet" method = "post">
+<div>
+<label for="fname">FirstName</label>
+<input type="text" name="fname" required><br><br>
+<label for="lname">LastName</label>
+<input type="text" name="lname" required><br><br>
+</div>
+<div>
+<label for="email">MailID</label>
+<input type="email" name="email" required><br><br>
+<label for="Password">Password</label>
+<input type="password" name="password" required><br><br>
+</div>
+<div>
+<label for="gender">Gender</label>
+<input type="radio" name="gender" value="male" required>
+<label for="male">Male</label>
+<input type="radio" name="gender"  value="female"  required>
+<label for="female">Female</label>
+<input type="radio" name="gender" value="other" required>
+<label for="Other">Other</label><br><br>
+</div>
+<div>
+<label for="dob">Date of Birth</label>
+<input type="date" name="dob" placeholder="DD/MM/YYYY" required><br><br>
+</div>
+<div>
+<input type="submit"value = "submit"><br><br>
+</div>
+</form>
+</body>
+</html>

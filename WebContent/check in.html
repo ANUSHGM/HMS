@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-image:url('m.jpg');
+  background-repeat:no-repeat;
+   text-align:center;
+   color:white;
+   font-family:Arial;
+    background-color: #0A215A;
+   }
+ form{
+ position:absolute;
+ top:20%;
+ right:40%
+ }
+ input[type=text], input[type=number], input[type=radio] {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 12px;
+   background-color: #f49f1c;
+   color:white;
+}
+</style>
+<title>CHECK IN</title>
+</head>
+<body>
+    <form  action="checkinservlet" method = "post">
+    <table width="40%" align="center">
+    <tr>
+    <td><b> <label for="rooms">CHOOSE A ROOM:</label></b></td>
+ <td> <select name="room no" ><br>
+    <option value="1">1-suite room RS:-4000</option><br>
+    <option value="2">2-suite room RS:-4000</option><br>
+    <option value="3">3-suite room RS:-4000</option><br>
+    <option value="4">4-suite room RS:-4000</option><br>
+    <option value="5">5-suite room RS:-4000</option><br>
+    <option value="6">6-ac room RS:-3000</option><br>
+    <option value="7">7-ac room RS:-3000</option><br>
+    <option value="8">8-ac room RS:-3000</option><br>
+    <option value="9">9-ac room RS:-3000</option><br>
+    <option value="10">10-ac room RS:-3000</option><br>
+    <option value="11">11-deluxe RS:-2000</option><br>
+    <option value="12">12-deluxe RS:-2000</option><br>
+    <option value="13">13-deluxe RS:-2000</option><br>
+    <option value="14">14-deluxe RS:-2000</option><br>
+    <option value="15e">15-deluxe RS:-2000</option><br>
+    <option value="16">16-non ac room RS:-1000</option><br>
+    <option value="17">17-non ac room RS:-1000</option><br>
+    <option value="18">18-non ac room RS:-1000</option><br>
+    <option value="19">19-non ac room RS:-1000</option><br>
+    <option value="20">20-non ac room RS:-1000</option><br>
+    </select></td><br>
+    </tr>
+    <tr>
+    <td><b>FULL NAME:</b></td>
+   <td> <input type="text" name="full name" /></td><br>
+    </tr>
+    <tr>
+	<td>Age</td>
+	<td><input type="number" min = "18" max="100" name="age" required/></td>
+	</tr>
+    <tr>
+    <td><b>MOBILE NUMBER:</b></td>
+    <td><input type="text" name="mobile number"/></td><br>
+    </tr>
+    <div>
+    <tr>
+<td><label for="payment"><b>PAYMENT:</b></td></label><br>
+<td><input type="radio" name="payment" value="cash" required>
+<label for="cash"><b>CASH</b></label><br>
+<input type="radio" name="payment"  value="card"  required>
+<label for="card"><b>CARD</b></label></td><br>
+</tr>
+</div>
+    <tr>
+    <td><input type="submit" value = "CHECK IN"></td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
